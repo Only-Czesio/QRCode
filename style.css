@@ -1,0 +1,149 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: fixed;
+        padding: 0;
+        margin: 0;
+    
+        top: 0;
+        left: 0;
+    
+        width: 100%;
+        height: 100%;
+}
+.background {
+    background-color: hsl(212, 45%, 89%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left : 150px;
+    margin-top: 75px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    height: 500px;
+    width: 335px;
+}
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-items: center;
+}
+p {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-items: center;
+
+}
+.atrribution {
+    display: block;
+    align-items: center;
+    text-align: center;
+
+} */
+
+/* Sets the font, background color, and text color for the whole page */
+@import url(https: //fonts.google.com/specimen/Outfit);
+
+body {
+    font-family: [Outfit];
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: white !important;
+}
+main.container {
+    width: 300px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    min-height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 5%;
+    padding: 5px;
+}
+div.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.text-container h2 {
+    text-align: center;
+    font-weight: bold;
+    color: hsl(218, 44%, 22%);
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    color:hsl(220, 15%, 55%);
+    text-align: center;
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+/* On larger screens, arrange the image and text side by side, and center the text */
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        text-align: left;
+    }
+
+    .img-container,
+    .text-container {
+        flex: 1;
+    }
+}
